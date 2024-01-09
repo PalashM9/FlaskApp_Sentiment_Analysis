@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <div class="sentiment-buttons">
+        <button class="sentiment-btn" id="class0">Angry</button>
+        <button class="sentiment-btn" id="class1">Disgusted</button>
+        <button class="sentiment-btn" id="class2">Fear</button>
+        <button class="sentiment-btn" id="class3">Happy</button>
+        <button class="sentiment-btn" id="class4">Interested</button>
+        <button class="sentiment-btn" id="class5">Neutral</button>
+        <button class="sentiment-btn" id="class6">Sad</button>
+        <button class="sentiment-btn" id="class7">Surprised</button>
+    </div>
+    <div class="chat-window">
+        <textarea id="user-input" placeholder="Type your message here..."></textarea>
+        <button onclick="predictSentiment()">Send</button>
+    </div>
+    <div id="sentiment-result" style="">{{ sentiment }}</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
