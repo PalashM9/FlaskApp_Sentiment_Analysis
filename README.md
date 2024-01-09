@@ -23,11 +23,11 @@ Enter the text you wish to analyze in the provided text box.
 Click the 'Predict' button to see the sentiment analysis of the text.
 
 ## Code Description
-app = Flask(__name__): Initializes the Flask application.
-Model Loading: The TF-IDF vectorizer and logistic regression model are loaded using joblib.
-predict_sentiment(text): This function takes text as input, processes it with the TF-IDF vectorizer, and then uses the logistic regression model to predict the sentiment.
-@app.route('/'): The home route that renders the index.html template.
-@app.route('/predict', methods=['POST']): The route that handles the prediction logic.
+app = Flask(__name__): Initializes the Flask application.   
+Model Loading: The TF-IDF vectorizer and logistic regression model are loaded using joblib.   
+predict_sentiment(text): This function takes text as input, processes it with the TF-IDF vectorizer, and then uses the logistic regression model to predict the sentiment.   
+@app.route('/'): The home route that renders the index.html template.   
+@app.route('/predict', methods=['POST']): The route that handles the prediction logic.   
 
 ## Sentiment Classes
 The application can predict the following sentiment classes:
